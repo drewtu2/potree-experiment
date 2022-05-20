@@ -148,7 +148,7 @@
 	pointclouds: [
 		{
 			name: 'Point Cloud',
-			url: './pointclouds/bridge/entwine_pointcloud/',
+			url: './pointclouds/bridge/entwine_pointcloud/ept.json',
 			position: [
 				0,
 				0,
