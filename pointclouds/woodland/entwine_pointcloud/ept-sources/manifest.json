@@ -1,0 +1,16 @@
+[
+  {
+    "bounds": [
+      544061.5458221436,
+      4500232.048812866,
+      -74.42681884765625,
+      544294.0128936768,
+      4500526.520454407,
+      25.884756088256836
+    ],
+    "inserted": true,
+    "metadataPath": "odm_georeferenced_model.json",
+    "path": "/datasets/Woodland/odm_georeferencing/odm_georeferenced_model.laz",
+    "points": 32207264
+  }
+]
