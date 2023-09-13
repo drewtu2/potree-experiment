@@ -1,0 +1,213 @@
+{
+  "bounds": [
+    -112,
+    -105,
+    -97,
+    74,
+    81,
+    89
+  ],
+  "boundsConforming": [
+    -111.0,
+    -92.0,
+    -17.0,
+    73.0,
+    69.0,
+    8.0
+  ],
+  "dataType": "laszip",
+  "hierarchyType": "json",
+  "points": 22120869,
+  "schema": [
+    {
+      "count": 22120869,
+      "maximum": 72.39,
+      "mean": 1.2606464718903982,
+      "minimum": -110.42,
+      "name": "X",
+      "offset": -19,
+      "scale": 0.01,
+      "size": 4,
+      "stddev": 8.438007582165305,
+      "type": "signed",
+      "variance": 71.19997195667918
+    },
+    {
+      "count": 22120869,
+      "maximum": 68.93,
+      "mean": 3.946292515451984,
+      "minimum": -91.97,
+      "name": "Y",
+      "offset": -12,
+      "scale": 0.01,
+      "size": 4,
+      "stddev": 9.740811276428424,
+      "type": "signed",
+      "variance": 94.88340432299515
+    },
+    {
+      "count": 22120869,
+      "maximum": 7.8500000000000005,
+      "mean": -8.370676359053537,
+      "minimum": -16.45,
+      "name": "Z",
+      "offset": -4,
+      "scale": 0.01,
+      "size": 4,
+      "stddev": 1.1950841317881225,
+      "type": "signed",
+      "variance": 1.4282260820517705
+    },
+    {
+      "count": 22120869,
+      "maximum": 0,
+      "mean": 0,
+      "minimum": 0,
+      "name": "Intensity",
+      "size": 2,
+      "stddev": 0,
+      "type": "unsigned",
+      "variance": 0
+    },
+    {
+      "count": 22120869,
+      "maximum": 1,
+      "mean": 1,
+      "minimum": 1,
+      "name": "ReturnNumber",
+      "size": 1,
+      "stddev": 0,
+      "type": "unsigned",
+      "variance": 0
+    },
+    {
+      "count": 22120869,
+      "maximum": 1,
+      "mean": 1,
+      "minimum": 1,
+      "name": "NumberOfReturns",
+      "size": 1,
+      "stddev": 0,
+      "type": "unsigned",
+      "variance": 0
+    },
+    {
+      "count": 22120869,
+      "maximum": 0,
+      "mean": 0,
+      "minimum": 0,
+      "name": "ScanDirectionFlag",
+      "size": 1,
+      "stddev": 0,
+      "type": "unsigned",
+      "variance": 0
+    },
+    {
+      "count": 22120869,
+      "maximum": 0,
+      "mean": 0,
+      "minimum": 0,
+      "name": "EdgeOfFlightLine",
+      "size": 1,
+      "stddev": 0,
+      "type": "unsigned",
+      "variance": 0
+    },
+    {
+      "count": 22120869,
+      "counts": [
+        {
+          "count": 22120869,
+          "value": 0
+        }
+      ],
+      "maximum": 0,
+      "mean": 0,
+      "minimum": 0,
+      "name": "Classification",
+      "size": 1,
+      "stddev": 0,
+      "type": "unsigned",
+      "variance": 0
+    },
+    {
+      "count": 22120869,
+      "maximum": 0,
+      "mean": 0,
+      "minimum": 0,
+      "name": "ScanAngleRank",
+      "size": 4,
+      "stddev": 0,
+      "type": "float",
+      "variance": 0
+    },
+    {
+      "count": 22120869,
+      "maximum": 13,
+      "mean": 4.476645831590065,
+      "minimum": 2,
+      "name": "UserData",
+      "size": 1,
+      "stddev": 2.8561347101677335,
+      "type": "unsigned",
+      "variance": 8.157505482624922
+    },
+    {
+      "count": 22120869,
+      "maximum": 0,
+      "mean": 0,
+      "minimum": 0,
+      "name": "PointSourceId",
+      "size": 2,
+      "stddev": 0,
+      "type": "unsigned",
+      "variance": 0
+    },
+    {
+      "count": 22120869,
+      "maximum": 0,
+      "mean": 0,
+      "minimum": 0,
+      "name": "GpsTime",
+      "size": 8,
+      "stddev": 0,
+      "type": "float",
+      "variance": 0
+    },
+    {
+      "count": 22120869,
+      "maximum": 254,
+      "mean": 85.8913969428554,
+      "minimum": 0,
+      "name": "Red",
+      "size": 2,
+      "stddev": 56.823081069884864,
+      "type": "unsigned",
+      "variance": 3228.8625422747077
+    },
+    {
+      "count": 22120869,
+      "maximum": 255,
+      "mean": 91.25880949794829,
+      "minimum": 0,
+      "name": "Green",
+      "size": 2,
+      "stddev": 52.651030111922495,
+      "type": "unsigned",
+      "variance": 2772.130971846569
+    },
+    {
+      "count": 22120869,
+      "maximum": 255,
+      "mean": 77.29907414576402,
+      "minimum": 0,
+      "name": "Blue",
+      "size": 2,
+      "stddev": 54.428725353582266,
+      "type": "unsigned",
+      "variance": 2962.486143615689
+    }
+  ],
+  "span": 128,
+  "version": "1.1.0"
+}

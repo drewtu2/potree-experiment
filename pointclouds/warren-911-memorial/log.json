@@ -1,0 +1,3907 @@
+{
+    "odmVersion": "3.2.1",
+    "memory": {
+        "total": 32059,
+        "available": 29585
+    },
+    "cpus": 5,
+    "images": 364,
+    "options": {
+        "3d_tiles": false,
+        "align": null,
+        "auto_boundary": true,
+        "auto_boundary_distance": 0,
+        "bg_removal": false,
+        "boundary": {},
+        "build_overviews": false,
+        "camera_lens": "auto",
+        "cameras": {},
+        "cog": true,
+        "copy_to": null,
+        "crop": 3,
+        "dem_decimation": 1,
+        "dem_euclidean_map": false,
+        "dem_gapfill_steps": 3,
+        "dem_resolution": 5,
+        "dsm": true,
+        "dtm": false,
+        "end_with": "odm_postprocess",
+        "fast_orthophoto": false,
+        "feature_quality": "high",
+        "feature_type": "sift",
+        "force_gps": false,
+        "gcp": null,
+        "geo": null,
+        "gltf": true,
+        "gps_accuracy": 10,
+        "ignore_gsd": false,
+        "matcher_neighbors": 0,
+        "matcher_order": 0,
+        "matcher_type": "flann",
+        "max_concurrency": 5,
+        "merge": "all",
+        "mesh_octree_depth": 11,
+        "mesh_size": 200000,
+        "min_num_features": 10000,
+        "name": "b6978b1c-8688-4e18-88f5-897f48ad0fe9",
+        "no_gpu": false,
+        "optimize_disk_space": false,
+        "orthophoto_compression": "DEFLATE",
+        "orthophoto_cutline": false,
+        "orthophoto_kmz": false,
+        "orthophoto_no_tiled": false,
+        "orthophoto_png": false,
+        "orthophoto_resolution": 5,
+        "pc_classify": false,
+        "pc_copc": false,
+        "pc_csv": false,
+        "pc_ept": true,
+        "pc_filter": 2.5,
+        "pc_las": false,
+        "pc_quality": "medium",
+        "pc_rectify": false,
+        "pc_sample": 0,
+        "pc_skip_geometric": false,
+        "primary_band": "auto",
+        "project_path": "/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9",
+        "radiometric_calibration": "none",
+        "rerun": null,
+        "rerun_all": false,
+        "rerun_from": null,
+        "rolling_shutter": false,
+        "rolling_shutter_readout": 0,
+        "sfm_algorithm": "incremental",
+        "sfm_no_partial": false,
+        "skip_3dmodel": false,
+        "skip_band_alignment": false,
+        "skip_orthophoto": false,
+        "skip_report": false,
+        "sky_removal": false,
+        "sm_cluster": null,
+        "sm_no_align": false,
+        "smrf_scalar": 1.25,
+        "smrf_slope": 0.15,
+        "smrf_threshold": 0.5,
+        "smrf_window": 18.0,
+        "split": 999999,
+        "split_image_groups": null,
+        "split_overlap": 150,
+        "texturing_keep_unseen_faces": false,
+        "texturing_single_material": false,
+        "texturing_skip_global_seam_leveling": false,
+        "texturing_skip_local_seam_leveling": false,
+        "tiles": false,
+        "use_3dmesh": false,
+        "use_exif": false,
+        "use_fixed_camera_params": false,
+        "use_hybrid_bundle_adjustment": false,
+        "video_limit": 500,
+        "video_resolution": 4000
+    },
+    "startTime": "2023-09-13T00:17:02.277894",
+    "stages": [
+        {
+            "name": "dataset",
+            "startTime": "2023-09-13T00:17:07.587774",
+            "messages": [
+                {
+                    "message": "Running dataset stage",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading dataset from: /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/images",
+                    "type": "info"
+                },
+                {
+                    "message": "Found video files (5), extracting frames",
+                    "type": "info"
+                },
+                {
+                    "message": "Processing video: /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/images/DJI_0664.MP4",
+                    "type": "info"
+                },
+                {
+                    "message": [
+                        2027,
+                        59.94005994005994,
+                        "DJI_0664"
+                    ],
+                    "type": "info"
+                },
+                {
+                    "message": "Use pseudo start time: 2023-09-13 00:16:39.237469",
+                    "type": "info"
+                },
+                {
+                    "message": "Preprocessing for black frame checker... this might take a bit",
+                    "type": "info"
+                },
+                {
+                    "message": "Preprocessing time: 114.45s",
+                    "type": "info"
+                },
+                {
+                    "message": "Calculated luminance_range_size is 255",
+                    "type": "info"
+                },
+                {
+                    "message": "Calculated luminance_minimum_value is 0",
+                    "type": "info"
+                },
+                {
+                    "message": "Calculated absolute_threshold is 76.5",
+                    "type": "info"
+                },
+                {
+                    "message": "Processing video: /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/images/DJI_0665.MP4",
+                    "type": "info"
+                },
+                {
+                    "message": [
+                        1447,
+                        59.94005994005994,
+                        "DJI_0665"
+                    ],
+                    "type": "info"
+                },
+                {
+                    "message": "Use pseudo start time: 2023-09-13 00:17:03.378252",
+                    "type": "info"
+                },
+                {
+                    "message": "Preprocessing for black frame checker... this might take a bit",
+                    "type": "info"
+                },
+                {
+                    "message": "Preprocessing time: 83.12s",
+                    "type": "info"
+                },
+                {
+                    "message": "Calculated luminance_range_size is 255",
+                    "type": "info"
+                },
+                {
+                    "message": "Calculated luminance_minimum_value is 0",
+                    "type": "info"
+                },
+                {
+                    "message": "Calculated absolute_threshold is 76.5",
+                    "type": "info"
+                },
+                {
+                    "message": "Processing video: /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/images/DJI_0662.MP4",
+                    "type": "info"
+                },
+                {
+                    "message": [
+                        306,
+                        25.0,
+                        "DJI_0662"
+                    ],
+                    "type": "info"
+                },
+                {
+                    "message": "Use pseudo start time: 2023-09-13 00:17:15.618252",
+                    "type": "info"
+                },
+                {
+                    "message": "Preprocessing for black frame checker... this might take a bit",
+                    "type": "info"
+                },
+                {
+                    "message": "Preprocessing time: 2.22s",
+                    "type": "info"
+                },
+                {
+                    "message": "Calculated luminance_range_size is 255",
+                    "type": "info"
+                },
+                {
+                    "message": "Calculated luminance_minimum_value is 0",
+                    "type": "info"
+                },
+                {
+                    "message": "Calculated absolute_threshold is 76.5",
+                    "type": "info"
+                },
+                {
+                    "message": "Processing video: /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/images/DJI_06643.MP4",
+                    "type": "info"
+                },
+                {
+                    "message": [
+                        8773,
+                        59.94005994005994,
+                        "DJI_06643"
+                    ],
+                    "type": "info"
+                },
+                {
+                    "message": "Use pseudo start time: 2023-09-13 00:19:41.981135",
+                    "type": "info"
+                },
+                {
+                    "message": "Preprocessing for black frame checker... this might take a bit",
+                    "type": "info"
+                },
+                {
+                    "message": "Preprocessing time: 2312.01s",
+                    "type": "info"
+                },
+                {
+                    "message": "Calculated luminance_range_size is 255",
+                    "type": "info"
+                },
+                {
+                    "message": "Calculated luminance_minimum_value is 0",
+                    "type": "info"
+                },
+                {
+                    "message": "Calculated absolute_threshold is 76.5",
+                    "type": "info"
+                },
+                {
+                    "message": "Processing video: /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/images/DJI_0666.MP4",
+                    "type": "info"
+                },
+                {
+                    "message": [
+                        5394,
+                        59.94005994005994,
+                        "DJI_0666"
+                    ],
+                    "type": "info"
+                },
+                {
+                    "message": "Use pseudo start time: 2023-09-13 00:21:11.971035",
+                    "type": "info"
+                },
+                {
+                    "message": "Preprocessing for black frame checker... this might take a bit",
+                    "type": "info"
+                },
+                {
+                    "message": "Preprocessing time: 671.26s",
+                    "type": "info"
+                },
+                {
+                    "message": "Calculated luminance_range_size is 255",
+                    "type": "info"
+                },
+                {
+                    "message": "Calculated luminance_minimum_value is 0",
+                    "type": "info"
+                },
+                {
+                    "message": "Calculated absolute_threshold is 76.5",
+                    "type": "info"
+                },
+                {
+                    "message": "Total processing time: 4766.67s",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading 364 images",
+                    "type": "info"
+                },
+                {
+                    "message": "Wrote images database: /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/images.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Found 364 usable images",
+                    "type": "info"
+                },
+                {
+                    "message": "GPS position not available for DJI_0664_11_1391.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_255_7837.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0664_9_1171.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_271_8441.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_51_48.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_98_230.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_199_5105.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_181_4471.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_90_200.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_293_906.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_317_2360.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_267_8301.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_220_6178.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0664_7_918.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_47_32.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_54_59.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_205_5397.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_66_102.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_168_3999.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0664_0_0.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_323_2759.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_214_5855.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_86_184.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_345_4057.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_95_220.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_287_562.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_180_4434.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_250_7614.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_124_616.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_312_2037.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_71_123.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_174_4204.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_183_4515.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_156_3456.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_327_3011.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_82_168.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_107_260.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_176_4279.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_69_115.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_61_84.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_329_3140.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0665_31_1209.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_143_2674.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_233_6827.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_151_3153.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_283_340.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_193_4841.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_154_3326.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_245_7389.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_326_2947.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_237_7023.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_49_40.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_178_4353.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_119_305.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_331_3327.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_160_3637.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0664_4_501.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_360_5228.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_216_5965.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_126_841.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_184_4539.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_137_2066.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_264_8194.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_259_8007.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_48_36.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_330_3205.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_73_132.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_144_2735.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0665_20_0.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_244_7343.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_155_3389.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_67_106.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_238_7070.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_285_447.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_210_5645.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_236_6975.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_163_3784.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_165_3874.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_195_4929.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_50_44.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_55_63.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_115_289.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_89_196.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_273_8511.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_113_282.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_196_4974.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_109_268.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0664_3_382.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_45_24.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0664_18_1911.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_117_297.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_104_248.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_162_3737.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_231_6725.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0665_25_824.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0664_19_1945.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_78_152.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_354_4829.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_226_6478.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0665_36_1337.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_39_3.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_150_3093.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0665_33_1254.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_81_164.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_135_1838.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_334_3360.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_64_95.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_122_419.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_321_2622.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0665_21_159.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_315_2236.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_57_69.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_111_275.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_318_2424.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_284_391.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_134_1723.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_280_0.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_175_4243.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_91_204.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_77_148.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_352_4673.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_333_3354.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_295_1029.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_118_301.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_190_4711.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_282_284.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0665_23_523.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_324_2825.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_75_140.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_100_236.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_258_7963.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_313_2105.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_192_4801.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_325_2886.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_149_3054.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_248_7526.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_43_16.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_347_4244.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_170_4070.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_292_844.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0665_30_1182.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0664_8_1075.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_276_8619.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_99_233.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_131_1392.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_161_3681.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_87_188.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0665_28_1122.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_40_6.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_251_7657.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_290_728.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_153_3276.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_56_66.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_127_954.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_132_1499.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_138_2187.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_145_2794.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_177_4316.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_361_5275.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_229_6625.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_79_156.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_288_616.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_332_3346.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_103_245.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_278_8693.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0665_34_1276.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_142_2603.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_76_144.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_215_5909.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_159_3587.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_338_3382.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0665_37_1372.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0664_5_656.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0664_15_1627.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_187_4611.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_301_1392.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_102_242.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_239_7118.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_68_110.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_266_8266.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_344_3945.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_311_1972.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_62_88.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_256_7880.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_252_7702.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_207_5498.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_173_4169.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0664_14_1580.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_63_92.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_272_8475.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_291_783.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_289_673.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_337_3376.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_265_8231.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_306_1669.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_269_8372.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_222_6279.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_200_5147.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_247_7480.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0664_1_99.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_59_77.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_336_3371.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_235_6927.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_221_6227.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_58_73.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_116_293.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_197_5019.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_169_4034.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_257_7922.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_363_5369.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_139_2308.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_129_1177.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_263_8159.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_94_216.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_254_7789.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_308_1771.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_213_5803.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_148_2996.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_304_1569.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_209_5596.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_277_8656.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_242_7254.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_270_8406.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_188_4635.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_320_2558.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_224_6376.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_319_2490.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_93_212.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_297_1148.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_120_0.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_60_81.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_349_4429.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_261_8087.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_339_3390.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_341_3674.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_97_228.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_123_520.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_52_51.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_340_3545.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_167_3958.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_279_8731.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_227_6529.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0664_16_1727.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_358_5126.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0664_13_1539.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0664_17_1826.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_351_4591.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_101_239.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_346_4153.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_125_727.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_303_1517.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_112_279.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_350_4514.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_362_5322.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_171_4113.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_186_4591.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0665_24_711.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0664_6_764.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_41_9.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_147_2925.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_355_4904.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_88_192.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_274_8547.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_44_20.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_133_1607.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_80_160.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_217_6021.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_201_5190.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_328_3077.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_105_252.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_84_176.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_92_208.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_281_209.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_185_4563.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_198_5064.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_307_1720.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_179_4394.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_157_3491.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_262_8123.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_234_6877.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_166_3915.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0664_2_200.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_46_28.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_343_3793.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0664_12_1441.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_342_3742.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_136_1963.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_275_8582.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_225_6426.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_296_1088.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_241_7209.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_108_264.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0665_22_283.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_189_4674.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_152_3224.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_246_7435.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_141_2525.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_182_4499.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_70_119.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_357_5059.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_260_8048.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_53_55.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_191_4757.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_249_7571.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_299_1244.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_38_0.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_305_1620.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_314_2177.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_110_272.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_140_2424.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_228_6580.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_302_1471.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_164_3831.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_65_98.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_356_4983.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_359_5181.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_128_1066.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_158_3529.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_121_355.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_42_12.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_202_5234.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_300_1294.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0665_35_1308.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_243_7298.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_83_172.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_223_6328.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_309_1834.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_240_7164.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_203_5280.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_211_5696.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_172_4143.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_146_2857.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0664_10_1279.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0665_26_1007.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_232_6776.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_335_3366.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_353_4752.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_96_224.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0665_29_1148.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_74_136.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0665_32_1230.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_130_1283.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_294_969.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_298_1198.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0665_27_1051.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_268_8336.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_322_2689.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_194_4883.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_316_2299.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_253_7743.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_219_6128.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_114_286.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_212_5749.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_85_180.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_204_5345.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_72_128.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_310_1912.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_218_6075.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_230_6674.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_348_4336.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0666_286_503.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_208_5548.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_06643_206_5447.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "GPS position not available for DJI_0662_106_256.jpg",
+                    "type": "warning"
+                },
+                {
+                    "message": "Could not generate coordinates file. The orthophoto will not be georeferenced.",
+                    "type": "warning"
+                },
+                {
+                    "message": "Finished dataset stage",
+                    "type": "info"
+                }
+            ]
+        },
+        {
+            "name": "split",
+            "startTime": "2023-09-13T01:36:35.015620",
+            "messages": [
+                {
+                    "message": "Running split stage",
+                    "type": "info"
+                },
+                {
+                    "message": "Normal dataset, will process all at once.",
+                    "type": "info"
+                },
+                {
+                    "message": "Finished split stage",
+                    "type": "info"
+                }
+            ]
+        },
+        {
+            "name": "merge",
+            "startTime": "2023-09-13T01:36:35.015717",
+            "messages": [
+                {
+                    "message": "Running merge stage",
+                    "type": "info"
+                },
+                {
+                    "message": "Normal dataset, nothing to merge.",
+                    "type": "info"
+                },
+                {
+                    "message": "Finished merge stage",
+                    "type": "info"
+                }
+            ]
+        },
+        {
+            "name": "opensfm",
+            "startTime": "2023-09-13T01:36:35.015790",
+            "messages": [
+                {
+                    "message": "Running opensfm stage",
+                    "type": "info"
+                },
+                {
+                    "message": "Maximum photo dimensions: 3840px",
+                    "type": "info"
+                },
+                {
+                    "message": "Photo dimensions for feature extraction: 1920px",
+                    "type": "info"
+                },
+                {
+                    "message": "No GPS information, using BOW matching by default (you can override this by setting --matcher-type explicitly)",
+                    "type": "info"
+                },
+                {
+                    "message": "Using BOW matching, will use HAHOG feature type, not SIFT",
+                    "type": "warning"
+                },
+                {
+                    "message": [
+                        "use_exif_size: no",
+                        "flann_algorithm: KDTREE",
+                        "feature_process_size: 1920",
+                        "feature_min_frames: 10000",
+                        "processes: 5",
+                        "matching_gps_neighbors: 0",
+                        "matching_gps_distance: 0",
+                        "matching_graph_rounds: 50",
+                        "optimize_camera_parameters: yes",
+                        "reconstruction_algorithm: incremental",
+                        "undistorted_image_format: tif",
+                        "bundle_outlier_filtering_type: AUTO",
+                        "sift_peak_threshold: 0.066",
+                        "align_orientation_prior: vertical",
+                        "triangulation_type: ROBUST",
+                        "retriangulation_ratio: 2",
+                        "matcher_type: WORDS",
+                        "feature_type: HAHOG",
+                        "align_method: orientation_prior",
+                        "local_bundle_radius: 0"
+                    ],
+                    "type": "info"
+                },
+                {
+                    "message": "running \"/code/SuperBuild/install/bin/opensfm/bin/opensfm\" detect_features \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm\"",
+                    "type": "info"
+                },
+                {
+                    "message": "running \"/code/SuperBuild/install/bin/opensfm/bin/opensfm\" match_features \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm\"",
+                    "type": "info"
+                },
+                {
+                    "message": "running \"/code/SuperBuild/install/bin/opensfm/bin/opensfm\" create_tracks \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm\"",
+                    "type": "info"
+                },
+                {
+                    "message": "running \"/code/SuperBuild/install/bin/opensfm/bin/opensfm\" reconstruct \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm\"",
+                    "type": "info"
+                },
+                {
+                    "message": "Export reconstruction stats",
+                    "type": "info"
+                },
+                {
+                    "message": "running \"/code/SuperBuild/install/bin/opensfm/bin/opensfm\" compute_statistics --diagram_max_points 100000 \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm\"",
+                    "type": "info"
+                },
+                {
+                    "message": "Will skip exporting /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/reconstruction.geocoords.json",
+                    "type": "warning"
+                },
+                {
+                    "message": "Updating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/config.yaml",
+                    "type": "info"
+                },
+                {
+                    "message": "undistorted_image_max_size: 3840",
+                    "type": "info"
+                },
+                {
+                    "message": "Undistorting /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm ...",
+                    "type": "info"
+                },
+                {
+                    "message": "running \"/code/SuperBuild/install/bin/opensfm/bin/opensfm\" export_visualsfm --points \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm\"",
+                    "type": "info"
+                },
+                {
+                    "message": "Finished opensfm stage",
+                    "type": "info"
+                }
+            ]
+        },
+        {
+            "name": "openmvs",
+            "startTime": "2023-09-13T04:47:00.118753",
+            "messages": [
+                {
+                    "message": "Running openmvs stage",
+                    "type": "info"
+                },
+                {
+                    "message": "running \"/code/SuperBuild/install/bin/opensfm/bin/opensfm\" export_openmvs \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm\"",
+                    "type": "info"
+                },
+                {
+                    "message": "Depthmap resolution set to: 480px",
+                    "type": "info"
+                },
+                {
+                    "message": "Running dense reconstruction. This might take a while.",
+                    "type": "info"
+                },
+                {
+                    "message": "Estimating depthmaps",
+                    "type": "info"
+                },
+                {
+                    "message": "running \"/code/SuperBuild/install/bin/OpenMVS/DensifyPointCloud\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/undistorted/openmvs/scene.mvs\"  --resolution-level 3 --dense-config-file \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/undistorted/openmvs/Densify.ini\" --max-resolution 3840 --max-threads 5 --number-views-fuse 2 --sub-resolution-levels 2 --archive-type 3 -w \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/undistorted/openmvs/depthmaps\" -v 0 --cuda-device -2",
+                    "type": "info"
+                },
+                {
+                    "message": "running \"/code/SuperBuild/install/bin/OpenMVS/DensifyPointCloud\" --filter-point-cloud -20 -i \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/undistorted/openmvs/scene_dense.mvs\" -v 0 --cuda-device -2",
+                    "type": "info"
+                },
+                {
+                    "message": "Finished openmvs stage",
+                    "type": "info"
+                }
+            ]
+        },
+        {
+            "name": "odm_filterpoints",
+            "startTime": "2023-09-13T05:43:05.971104",
+            "messages": [
+                {
+                    "message": "Running odm_filterpoints stage",
+                    "type": "info"
+                },
+                {
+                    "message": "Not a georeferenced reconstruction, will ignore --auto-boundary",
+                    "type": "warning"
+                },
+                {
+                    "message": "Filtering /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/undistorted/openmvs/scene_dense_dense_filtered.ply (statistical, meanK 16, standard deviation 2.5)",
+                    "type": "info"
+                },
+                {
+                    "message": "running \"/code/SuperBuild/install/bin/FPCFilter\" --input \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/undistorted/openmvs/scene_dense_dense_filtered.ply\" --output \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_filterpoints/point_cloud.ply\" --concurrency 5 --meank 16 --std 2.5 --stats \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_filterpoints/point_cloud_stats.json\"",
+                    "type": "info"
+                },
+                {
+                    "message": "Finished odm_filterpoints stage",
+                    "type": "info"
+                }
+            ]
+        },
+        {
+            "name": "odm_meshing",
+            "startTime": "2023-09-13T05:43:42.122078",
+            "messages": [
+                {
+                    "message": "Running odm_meshing stage",
+                    "type": "info"
+                },
+                {
+                    "message": "Writing ODM Mesh file in: /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/odm_mesh.ply",
+                    "type": "info"
+                },
+                {
+                    "message": "running \"/code/SuperBuild/install/bin/PoissonRecon\" --in \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_filterpoints/point_cloud.ply\" --out \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/odm_mesh.dirty.ply\" --depth 11 --pointWeight 4.0 --samplesPerNode 1.0 --threads 4 --bType 2 --linearFit ",
+                    "type": "info"
+                },
+                {
+                    "message": "running \"/code/SuperBuild/install/bin/OpenMVS/ReconstructMesh\" -i \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/odm_mesh.dirty.ply\" -o \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/odm_mesh.ply\" --archive-type 3 --remove-spikes 0 --remove-spurious 20 --smooth 0 --target-face-num 400000 -v 0",
+                    "type": "info"
+                },
+                {
+                    "message": "Writing ODM 2.5D Mesh file in: /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/odm_25dmesh.ply",
+                    "type": "info"
+                },
+                {
+                    "message": "ODM 2.5D DSM resolution: 0.01",
+                    "type": "info"
+                },
+                {
+                    "message": "Created temporary directory: /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp",
+                    "type": "info"
+                },
+                {
+                    "message": "Creating DSM for 2.5D mesh",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal info \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_filterpoints/point_cloud.ply\" > \"/tmp/tmpk8qvoi9w.json\"",
+                    "type": "info"
+                },
+                {
+                    "message": "Point cloud bounds are [minx: -110.421936, maxx: 72.38558197] [miny: -91.97354889, maxy: 68.9332962]",
+                    "type": "info"
+                },
+                {
+                    "message": "DEM resolution is (16091, 18281), max tile size is 4096, will split DEM generation into 25 tiles",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.03141592653589794_x0_y0.tif (max, radius: 0.03141592653589794, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.03141592653589794_x0_y1.tif (max, radius: 0.03141592653589794, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.03141592653589794_x0_y2.tif (max, radius: 0.03141592653589794, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmp10vldhlz.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.03141592653589794_x0_y3.tif (max, radius: 0.03141592653589794, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmp32wr5mab.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.03141592653589794_x0_y4.tif (max, radius: 0.03141592653589794, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpvpctwgkl.json",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmp_brvdlr_.json",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmp92tcse0_.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.03141592653589794_x1_y0.tif (max, radius: 0.03141592653589794, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpdbyrecjn.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.03141592653589794_x1_y1.tif (max, radius: 0.03141592653589794, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpnhdncv1k.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.03141592653589794_x1_y2.tif (max, radius: 0.03141592653589794, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpq26_qjah.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.03141592653589794_x1_y3.tif (max, radius: 0.03141592653589794, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpozxkxciq.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.03141592653589794_x1_y4.tif (max, radius: 0.03141592653589794, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpfqp0n5aa.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.03141592653589794_x2_y0.tif (max, radius: 0.03141592653589794, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpekfhc0fr.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.03141592653589794_x2_y1.tif (max, radius: 0.03141592653589794, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.03141592653589794_x2_y2.tif (max, radius: 0.03141592653589794, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpbc2hva4c.json",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpu21x0jzj.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.03141592653589794_x2_y3.tif (max, radius: 0.03141592653589794, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpx5q57lse.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.03141592653589794_x2_y4.tif (max, radius: 0.03141592653589794, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmp9d52edzd.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.03141592653589794_x3_y0.tif (max, radius: 0.03141592653589794, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmp90wil197.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.03141592653589794_x3_y1.tif (max, radius: 0.03141592653589794, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpsutlxnzp.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.03141592653589794_x3_y2.tif (max, radius: 0.03141592653589794, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmp8qlk6fsg.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.03141592653589794_x3_y3.tif (max, radius: 0.03141592653589794, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpiw3f_oro.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.03141592653589794_x3_y4.tif (max, radius: 0.03141592653589794, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpuiq1uvpj.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.03141592653589794_x4_y0.tif (max, radius: 0.03141592653589794, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpp3ridhwq.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.03141592653589794_x4_y1.tif (max, radius: 0.03141592653589794, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmp74zku7he.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.03141592653589794_x4_y2.tif (max, radius: 0.03141592653589794, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmplonnhok1.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.03141592653589794_x4_y3.tif (max, radius: 0.03141592653589794, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpxrvt40jg.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.03141592653589794_x4_y4.tif (max, radius: 0.03141592653589794, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpb7i6xnwn.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.022214414690791835_x0_y0.tif (max, radius: 0.022214414690791835, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpjywjabzq.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.022214414690791835_x0_y1.tif (max, radius: 0.022214414690791835, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpol52uk2u.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.022214414690791835_x0_y2.tif (max, radius: 0.022214414690791835, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpapf8qg9q.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.022214414690791835_x0_y3.tif (max, radius: 0.022214414690791835, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpwpnonb8g.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.022214414690791835_x0_y4.tif (max, radius: 0.022214414690791835, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpxnf1j_3a.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.022214414690791835_x1_y0.tif (max, radius: 0.022214414690791835, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpmk_nu93j.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.022214414690791835_x1_y1.tif (max, radius: 0.022214414690791835, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpxc7s89vy.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.022214414690791835_x1_y2.tif (max, radius: 0.022214414690791835, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmp992srebz.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.022214414690791835_x1_y3.tif (max, radius: 0.022214414690791835, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpdp2j60r_.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.022214414690791835_x1_y4.tif (max, radius: 0.022214414690791835, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmp9ce1ett4.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.022214414690791835_x2_y0.tif (max, radius: 0.022214414690791835, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpcgueyh60.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.022214414690791835_x2_y1.tif (max, radius: 0.022214414690791835, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpan__pjlf.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.022214414690791835_x2_y2.tif (max, radius: 0.022214414690791835, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmp0e8xn38s.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.022214414690791835_x2_y3.tif (max, radius: 0.022214414690791835, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpngu74crr.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.022214414690791835_x2_y4.tif (max, radius: 0.022214414690791835, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpgps0sh2r.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.022214414690791835_x3_y0.tif (max, radius: 0.022214414690791835, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpcz8_uyhx.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.022214414690791835_x3_y1.tif (max, radius: 0.022214414690791835, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpuxog1lcb.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.022214414690791835_x3_y2.tif (max, radius: 0.022214414690791835, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpp62xjx_4.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.022214414690791835_x3_y3.tif (max, radius: 0.022214414690791835, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpo3mtgsrl.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.022214414690791835_x3_y4.tif (max, radius: 0.022214414690791835, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmppw7wo5s9.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.022214414690791835_x4_y0.tif (max, radius: 0.022214414690791835, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmppu0ciitu.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.022214414690791835_x4_y1.tif (max, radius: 0.022214414690791835, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpp_9h04s9.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.022214414690791835_x4_y2.tif (max, radius: 0.022214414690791835, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmp4d1u8vdb.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.022214414690791835_x4_y3.tif (max, radius: 0.022214414690791835, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpf92gtg4b.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.022214414690791835_x4_y4.tif (max, radius: 0.022214414690791835, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpa4ei5949.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.015707963267948967_x0_y0.tif (max, radius: 0.015707963267948967, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmp40tlhh7s.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.015707963267948967_x0_y1.tif (max, radius: 0.015707963267948967, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpteirb2tn.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.015707963267948967_x0_y2.tif (max, radius: 0.015707963267948967, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpyz5hq3rl.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.015707963267948967_x0_y3.tif (max, radius: 0.015707963267948967, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpmr07dklj.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.015707963267948967_x0_y4.tif (max, radius: 0.015707963267948967, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpx3d3wit_.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.015707963267948967_x1_y0.tif (max, radius: 0.015707963267948967, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpdlw6qvxa.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.015707963267948967_x1_y1.tif (max, radius: 0.015707963267948967, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpyfbgc6ur.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.015707963267948967_x1_y2.tif (max, radius: 0.015707963267948967, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpvfowjlpk.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.015707963267948967_x1_y3.tif (max, radius: 0.015707963267948967, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmprgip1ldf.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.015707963267948967_x1_y4.tif (max, radius: 0.015707963267948967, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmprx_jqc6y.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.015707963267948967_x2_y0.tif (max, radius: 0.015707963267948967, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmp51t282w2.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.015707963267948967_x2_y1.tif (max, radius: 0.015707963267948967, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpu0zuq3gp.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.015707963267948967_x2_y2.tif (max, radius: 0.015707963267948967, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpzqazx42s.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.015707963267948967_x2_y3.tif (max, radius: 0.015707963267948967, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpd_p3zi_i.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.015707963267948967_x2_y4.tif (max, radius: 0.015707963267948967, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpisyli905.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.015707963267948967_x3_y0.tif (max, radius: 0.015707963267948967, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmp_lxoanl8.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.015707963267948967_x3_y1.tif (max, radius: 0.015707963267948967, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmp3bye3qne.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.015707963267948967_x3_y2.tif (max, radius: 0.015707963267948967, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmp3neoubmj.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.015707963267948967_x3_y3.tif (max, radius: 0.015707963267948967, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpz3tp_mr1.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.015707963267948967_x3_y4.tif (max, radius: 0.015707963267948967, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpd3tr1n4p.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.015707963267948967_x4_y0.tif (max, radius: 0.015707963267948967, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmppjvisz7t.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.015707963267948967_x4_y1.tif (max, radius: 0.015707963267948967, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmppelyxxfw.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.015707963267948967_x4_y2.tif (max, radius: 0.015707963267948967, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmp3uo27ub8.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.015707963267948967_x4_y3.tif (max, radius: 0.015707963267948967, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmplq6vrpsl.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm_r0.015707963267948967_x4_y4.tif (max, radius: 0.015707963267948967, resolution: 0.01)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpm17o2846.json",
+                    "type": "info"
+                },
+                {
+                    "message": "running gdalbuildvrt -input_file_list \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/tiles_list.txt\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/tiles.vrt\" ",
+                    "type": "info"
+                },
+                {
+                    "message": "running gdal_translate -co NUM_THREADS=5 -co BIGTIFF=IF_SAFER --config GDAL_CACHEMAX 42.25% \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/tiles.vrt\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/tiles.tmp.tif\"",
+                    "type": "info"
+                },
+                {
+                    "message": "running gdal_translate -co NUM_THREADS=5 -co BIGTIFF=IF_SAFER --config GDAL_CACHEMAX 42.25% -outsize 10% 0 \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/tiles.tmp.tif\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/tiles.small.tif\"",
+                    "type": "info"
+                },
+                {
+                    "message": "running gdalbuildvrt -resolution highest -r bilinear \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/merged.vrt\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/tiles.small_filled.tif\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/tiles.tmp.tif\"",
+                    "type": "info"
+                },
+                {
+                    "message": "running gdal_translate -co NUM_THREADS=5 -co TILED=YES -co BIGTIFF=IF_SAFER -co COMPRESS=DEFLATE --config GDAL_CACHEMAX 42.25% \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/merged.vrt\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/tiles.tif\"",
+                    "type": "info"
+                },
+                {
+                    "message": "Starting smoothing...",
+                    "type": "info"
+                },
+                {
+                    "message": "Smoothing iteration 1",
+                    "type": "info"
+                },
+                {
+                    "message": "Completed smoothing to create /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm.tif in 0:00:33.751809",
+                    "type": "info"
+                },
+                {
+                    "message": "Completed mesh_dsm.tif in 0:04:30.227214",
+                    "type": "info"
+                },
+                {
+                    "message": "Creating mesh from DSM: /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm.tif",
+                    "type": "info"
+                },
+                {
+                    "message": "running \"/code/SuperBuild/install/bin/dem2mesh\" -inputFile \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm.tif\" -outputFile \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/odm_25dmesh.dirty.ply\" -maxTileLength 2000 -maxVertexCount 200000 -maxConcurrency 5 -edgeSwapThreshold 0.15 -verbose ",
+                    "type": "info"
+                },
+                {
+                    "message": "running \"/code/SuperBuild/install/bin/OpenMVS/ReconstructMesh\" -i \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/odm_25dmesh.dirty.ply\" -o \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/odm_25dmesh.ply\" --archive-type 3 --remove-spikes 0 --remove-spurious 0 --smooth 0 --target-face-num 400000 -v 0",
+                    "type": "info"
+                },
+                {
+                    "message": "Finished odm_meshing stage",
+                    "type": "info"
+                }
+            ]
+        },
+        {
+            "name": "mvs_texturing",
+            "startTime": "2023-09-13T05:50:47.271348",
+            "messages": [
+                {
+                    "message": "Running mvs_texturing stage",
+                    "type": "info"
+                },
+                {
+                    "message": "Writing MVS Textured file in: /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_texturing/odm_textured_model_geo.obj",
+                    "type": "info"
+                },
+                {
+                    "message": "running \"/code/SuperBuild/install/bin/texrecon\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/undistorted/reconstruction.nvm\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/odm_mesh.ply\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_texturing/odm_textured_model_geo\" -d gmi -o gauss_clamping -t none --no_intermediate_results      --max_texture_size=8192 ",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating glTF Binary",
+                    "type": "info"
+                },
+                {
+                    "message": "Converting /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_texturing/odm_textured_model_geo.obj --> /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_texturing/odm_textured_model_geo.glb",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_texturing/odm_textured_model_geo.obj",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0000_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0001_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0002_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0003_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0004_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0005_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0006_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0007_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0008_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0009_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0010_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0011_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0012_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0013_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0014_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0015_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0016_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0017_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0018_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0019_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0020_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0021_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0022_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0023_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0024_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0025_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0026_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0027_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0028_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0029_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0030_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0031_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0032_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0033_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0034_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0035_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0036_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0037_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0038_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0039_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Loading odm_textured_model_geo_material0040_map_Kd.png",
+                    "type": "info"
+                },
+                {
+                    "message": "Writing...",
+                    "type": "info"
+                },
+                {
+                    "message": "Wrote /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_texturing/odm_textured_model_geo.glb",
+                    "type": "info"
+                },
+                {
+                    "message": "Compressing with draco",
+                    "type": "info"
+                },
+                {
+                    "message": "running draco_transcoder -i \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_texturing/odm_textured_model_geo.glb\" -o \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_texturing/odm_textured_model_geo_compressed.glb\" -qt 16 -qp 16",
+                    "type": "info"
+                },
+                {
+                    "message": "Writing MVS Textured file in: /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_texturing_25d/odm_textured_model_geo.obj",
+                    "type": "info"
+                },
+                {
+                    "message": "running \"/code/SuperBuild/install/bin/texrecon\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/undistorted/reconstruction.nvm\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/odm_25dmesh.ply\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_texturing_25d/odm_textured_model_geo\" -d gmi -o gauss_clamping -t none --no_intermediate_results    --nadir_mode  --max_texture_size=8192 ",
+                    "type": "info"
+                },
+                {
+                    "message": "Finished mvs_texturing stage",
+                    "type": "info"
+                }
+            ]
+        },
+        {
+            "name": "odm_georeferencing",
+            "startTime": "2023-09-13T05:54:18.188149",
+            "messages": [
+                {
+                    "message": "Running odm_georeferencing stage",
+                    "type": "info"
+                },
+                {
+                    "message": "Converting point cloud (non-georeferenced)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal translate -i \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_filterpoints/point_cloud.ply\" -o \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_georeferencing/odm_georeferenced_model.laz\" ferry --filters.ferry.dimensions=\"views => UserData\"",
+                    "type": "info"
+                },
+                {
+                    "message": "Creating Entwine Point Tile output",
+                    "type": "info"
+                },
+                {
+                    "message": "running entwine build --threads 5 --tmp \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/entwine_pointcloud-tmp\" -i /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_georeferencing/odm_georeferenced_model.laz -o \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/entwine_pointcloud\" ",
+                    "type": "info"
+                },
+                {
+                    "message": "Finished odm_georeferencing stage",
+                    "type": "info"
+                }
+            ]
+        },
+        {
+            "name": "odm_dem",
+            "startTime": "2023-09-13T05:55:08.919317",
+            "messages": [
+                {
+                    "message": "Running odm_dem stage",
+                    "type": "info"
+                },
+                {
+                    "message": "Not georeferenced, using ungeoreferenced point cloud...",
+                    "type": "warning"
+                },
+                {
+                    "message": "Cannot calculate GSD, using requested resolution of 5.00",
+                    "type": "warning"
+                },
+                {
+                    "message": "Classify: False",
+                    "type": "info"
+                },
+                {
+                    "message": "Create DSM: True",
+                    "type": "info"
+                },
+                {
+                    "message": "Create DTM: False",
+                    "type": "info"
+                },
+                {
+                    "message": "DEM input file /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_georeferencing/odm_georeferenced_model.laz found: True",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal info --summary \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_georeferencing/odm_georeferenced_model.laz\" > \"/tmp/tmpw8o5vkl0.json\"",
+                    "type": "info"
+                },
+                {
+                    "message": "Point cloud bounds are [minx: -110.421936, maxx: 72.38558197] [miny: -91.97354889, maxy: 68.9332962]",
+                    "type": "info"
+                },
+                {
+                    "message": "DEM resolution is (3219, 3657), max tile size is 4096, will split DEM generation into 1 tiles",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm_r0.020000000000000004_x0_y0.tif (max, radius: 0.020000000000000004, resolution: 0.05)",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm_r0.014142135623730952_x0_y0.tif (max, radius: 0.014142135623730952, resolution: 0.05)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpzzz6g94x.json",
+                    "type": "info"
+                },
+                {
+                    "message": "Generating /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm_r0.01_x0_y0.tif (max, radius: 0.01, resolution: 0.05)",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpldp1wqwl.json",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal pipeline -i /tmp/tmpiz7xv907.json",
+                    "type": "info"
+                },
+                {
+                    "message": "running gdalbuildvrt -input_file_list \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/tiles_list.txt\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/tiles.vrt\" ",
+                    "type": "info"
+                },
+                {
+                    "message": "running gdal_translate -co NUM_THREADS=5 -co BIGTIFF=IF_SAFER --config GDAL_CACHEMAX 40.15% \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/tiles.vrt\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/tiles.tmp.tif\"",
+                    "type": "info"
+                },
+                {
+                    "message": "running gdal_translate -co NUM_THREADS=5 -co BIGTIFF=IF_SAFER --config GDAL_CACHEMAX 40.15% -outsize 10% 0 \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/tiles.tmp.tif\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/tiles.small.tif\"",
+                    "type": "info"
+                },
+                {
+                    "message": "running gdalbuildvrt -resolution highest -r bilinear \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/merged.vrt\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/tiles.small_filled.tif\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/tiles.tmp.tif\"",
+                    "type": "info"
+                },
+                {
+                    "message": "running gdal_translate -co NUM_THREADS=5 -co TILED=YES -co BIGTIFF=IF_SAFER -co COMPRESS=DEFLATE --config GDAL_CACHEMAX 40.15% \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/merged.vrt\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/tiles.tif\"",
+                    "type": "info"
+                },
+                {
+                    "message": "Starting smoothing...",
+                    "type": "info"
+                },
+                {
+                    "message": "Smoothing iteration 1",
+                    "type": "info"
+                },
+                {
+                    "message": "Completed smoothing to create /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.tif in 0:00:02.279247",
+                    "type": "info"
+                },
+                {
+                    "message": "Completed dsm.tif in 0:00:13.917053",
+                    "type": "info"
+                },
+                {
+                    "message": "Either /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_georeferencing/odm_georeferenced_model.bounds.gpkg or /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.tif does not exist, will skip cropping.",
+                    "type": "warning"
+                },
+                {
+                    "message": "Adding pseudo georeferencing (raster should show up at the equator) to /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.tif",
+                    "type": "info"
+                },
+                {
+                    "message": "Optimizing /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.tif as Cloud Optimized GeoTIFF",
+                    "type": "info"
+                },
+                {
+                    "message": "running gdal_translate -of COG -co NUM_THREADS=5 -co BLOCKSIZE=256 -co COMPRESS=DEFLATE -co PREDICTOR=2 -co BIGTIFF=IF_SAFER -co RESAMPLING=NEAREST --config GDAL_CACHEMAX 40.7% --config GDAL_NUM_THREADS 5 \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.tif\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm_cogeo.tif\" ",
+                    "type": "info"
+                },
+                {
+                    "message": "Finished odm_dem stage",
+                    "type": "info"
+                }
+            ]
+        },
+        {
+            "name": "odm_orthophoto",
+            "startTime": "2023-09-13T05:55:23.414250",
+            "messages": [
+                {
+                    "message": "Running odm_orthophoto stage",
+                    "type": "info"
+                },
+                {
+                    "message": "Cannot calculate GSD, using requested resolution of 5.00",
+                    "type": "warning"
+                },
+                {
+                    "message": "Creating GeoTIFF",
+                    "type": "info"
+                },
+                {
+                    "message": "running \"/code/SuperBuild/install/bin/odm_orthophoto\" -inputFiles /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_texturing_25d/odm_textured_model_geo.obj -logFile \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_orthophoto/odm_orthophoto_log.txt\" -outputFile \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_orthophoto/odm_orthophoto_render.tif\" -resolution 20.0 -verbose -outputCornerFile \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_orthophoto/odm_orthophoto_corners.txt\"       --config GDAL_CACHEMAX 13678278656.0 ",
+                    "type": "info"
+                },
+                {
+                    "message": "Adding pseudo georeferencing (raster should show up at the equator) to /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_orthophoto/odm_orthophoto_render.tif",
+                    "type": "info"
+                },
+                {
+                    "message": "Renaming /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_orthophoto/odm_orthophoto_render.tif --> /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_orthophoto/odm_orthophoto.tif",
+                    "type": "info"
+                },
+                {
+                    "message": "Finished odm_orthophoto stage",
+                    "type": "info"
+                }
+            ]
+        },
+        {
+            "name": "odm_report",
+            "startTime": "2023-09-13T05:55:28.147892",
+            "messages": [
+                {
+                    "message": "Running odm_report stage",
+                    "type": "info"
+                },
+                {
+                    "message": "Exporting shots.geojson",
+                    "type": "info"
+                },
+                {
+                    "message": "Wrote /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_report/shots.geojson",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal info --dimensions \"X,Y,Z\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_georeferencing/odm_georeferenced_model.laz\" > \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_georeferencing/odm_georeferenced_model.info.json\"",
+                    "type": "info"
+                },
+                {
+                    "message": "running pdal translate -i \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_georeferencing/odm_georeferenced_model.laz\" -o \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/stats/overlap.tif\" --writer gdal --writers.gdal.resolution=0.13057857142857143 --writers.gdal.data_type=uint8_t --writers.gdal.dimension=UserData --writers.gdal.output_type=max --writers.gdal.radius=0.18466598666958967 ",
+                    "type": "info"
+                },
+                {
+                    "message": "running gdaldem color-relief \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/stats/overlap.tif\" \"/code/opendm/report/overlap_color_map.txt\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/stats/overlap.png\" -of PNG -alpha",
+                    "type": "info"
+                },
+                {
+                    "message": "running gdal_translate -of png \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_orthophoto/odm_orthophoto.tif\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/stats/ortho.png\" -outsize 1400 0  --config GDAL_CACHEMAX 40.7% ",
+                    "type": "info"
+                },
+                {
+                    "message": "running gdal_translate -outsize 1400 0 \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.tif\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.preview.tif\" --config GDAL_CACHEMAX 40.7%",
+                    "type": "info"
+                },
+                {
+                    "message": "Computing raster stats for /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.preview.tif",
+                    "type": "info"
+                },
+                {
+                    "message": "running gdaldem color-relief \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.preview.tif\" \"/code/opendm/tiles/color_relief.txt\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.previewcolor.tif\" -alpha -co ALPHA=YES",
+                    "type": "info"
+                },
+                {
+                    "message": "running gdaldem hillshade \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.preview.tif\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.previewhillshade.tif\" -z 1.0 -s 1.0 -az 315.0 -alt 45.0",
+                    "type": "info"
+                },
+                {
+                    "message": "running /usr/bin/python3 \"/code/opendm/tiles/hsv_merge.py\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.previewcolor.tif\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.previewhillshade.tif\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.previewcolored_hillshade.tif\"",
+                    "type": "info"
+                },
+                {
+                    "message": "running gdal_translate -outsize 1400 0 -of png \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.previewcolored_hillshade.tif\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/stats/dsm.png\" --config GDAL_CACHEMAX 40.7%",
+                    "type": "info"
+                },
+                {
+                    "message": "Exporting report to /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_report/report.pdf",
+                    "type": "info"
+                },
+                {
+                    "message": "Finished odm_report stage",
+                    "type": "info"
+                }
+            ]
+        },
+        {
+            "name": "odm_postprocess",
+            "startTime": "2023-09-13T05:55:56.534105",
+            "messages": [
+                {
+                    "message": "Running odm_postprocess stage",
+                    "type": "info"
+                },
+                {
+                    "message": "Post Processing",
+                    "type": "info"
+                },
+                {
+                    "message": "Finished odm_postprocess stage",
+                    "type": "info"
+                },
+                {
+                    "message": "No more stages to run",
+                    "type": "info"
+                }
+            ],
+            "endTime": "2023-09-13T05:55:56.534433",
+            "totalTime": 0.0
+        }
+    ],
+    "processes": [
+        {
+            "command": "\"/code/SuperBuild/install/bin/opensfm/bin/opensfm\" detect_features \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm\"",
+            "exitCode": 0,
+            "output": [
+                "2023-09-13 01:45:21,502 INFO: Extracting ROOT_HAHOG features for image DJI_0666_286_503.jpg",
+                "2023-09-13 01:45:21,894 DEBUG: Found 12600 points in 3.316911220550537s",
+                "2023-09-13 01:45:22,459 INFO: Extracting ROOT_HAHOG features for image DJI_06643_208_5548.jpg",
+                "2023-09-13 01:45:24,529 DEBUG: Found 12283 points in 3.274791955947876s",
+                "2023-09-13 01:45:24,675 DEBUG: Found 12275 points in 3.1418964862823486s",
+                "2023-09-13 01:45:24,943 INFO: Extracting ROOT_HAHOG features for image DJI_06643_206_5447.jpg",
+                "2023-09-13 01:45:25,716 INFO: Extracting ROOT_HAHOG features for image DJI_0662_106_256.jpg",
+                "2023-09-13 01:45:25,766 DEBUG: Found 12962 points in 3.2926368713378906s",
+                "2023-09-13 01:45:28,255 DEBUG: Found 12998 points in 3.2649762630462646s",
+                "2023-09-13 01:45:28,714 DEBUG: Found 12595 points in 2.992421865463257s"
+            ]
+        },
+        {
+            "command": "\"/code/SuperBuild/install/bin/opensfm/bin/opensfm\" match_features \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm\"",
+            "exitCode": 0,
+            "output": [
+                "2023-09-13 03:50:16,591 DEBUG: Matching DJI_06643_181_4471.jpg and DJI_06643_273_8511.jpg.  Matcher: WORDS (symmetric) T-desc: 0.455 T-robust: 0.061 T-total: 0.517 Matches: 39 Robust: 17 Success: False",
+                "2023-09-13 03:50:16,707 DEBUG: Matching DJI_0662_109_268.jpg and DJI_06643_226_6478.jpg.  Matcher: WORDS (symmetric) T-desc: 1.135 T-robust: 0.057 T-total: 1.192 Matches: 29 Robust: 14 Success: False",
+                "2023-09-13 03:50:16,758 DEBUG: Matching DJI_0666_283_340.jpg and DJI_06643_223_6328.jpg.  Matcher: WORDS (symmetric) T-desc: 0.676 Matches: FAILED",
+                "2023-09-13 03:50:16,864 DEBUG: Matching DJI_06643_139_2308.jpg and DJI_06643_221_6227.jpg.  Matcher: WORDS (symmetric) T-desc: 0.156 T-robust: 0.001 T-total: 0.157 Matches: 86 Robust: 64 Success: True",
+                "2023-09-13 03:50:16,999 DEBUG: Matching DJI_0665_25_824.jpg and DJI_06643_201_5190.jpg.  Matcher: WORDS (symmetric) T-desc: 0.580 Matches: FAILED",
+                "2023-09-13 03:50:17,209 DEBUG: Matching DJI_0662_72_128.jpg and DJI_0666_346_4153.jpg.  Matcher: WORDS (symmetric) T-desc: 0.573 T-robust: 0.106 T-total: 0.680 Matches: 27 Robust: 11 Success: False",
+                "2023-09-13 03:50:17,264 DEBUG: Matching DJI_06643_173_4169.jpg and DJI_0666_304_1569.jpg.  Matcher: WORDS (symmetric) T-desc: 0.346 T-robust: 0.054 T-total: 0.400 Matches: 23 Robust: 12 Success: False",
+                "2023-09-13 03:50:17,315 DEBUG: Matching DJI_0662_102_242.jpg and DJI_0662_66_102.jpg.  Matcher: WORDS (symmetric) T-desc: 0.449 Matches: FAILED",
+                "2023-09-13 03:50:17,445 DEBUG: Matching DJI_0662_56_66.jpg and DJI_0662_101_239.jpg.  Matcher: WORDS (symmetric) T-desc: 0.787 T-robust: 0.008 T-total: 0.795 Matches: 35 Robust: 16 Success: False",
+                "2023-09-13 03:50:17,495 INFO: Matched 66066 pairs (brown-brown: 66066) in 7484.982717122999 seconds (0.11329553355164537 seconds/pair)."
+            ]
+        },
+        {
+            "command": "\"/code/SuperBuild/install/bin/opensfm/bin/opensfm\" create_tracks \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm\"",
+            "exitCode": 0,
+            "output": [
+                "2023-09-13 03:51:49,865 INFO: reading features",
+                "2023-09-13 03:51:54,397 DEBUG: Merging features onto tracks",
+                "2023-09-13 03:52:23,169 DEBUG: Good tracks: 506784"
+            ]
+        },
+        {
+            "command": "\"/code/SuperBuild/install/bin/opensfm/bin/opensfm\" reconstruct \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm\"",
+            "exitCode": 0,
+            "output": [
+                "2023-09-13 04:42:07,737 INFO: DJI_0666_347_4244.jpg resection inliers: 2185 / 2618",
+                "2023-09-13 04:42:07,752 INFO: Adding DJI_0666_347_4244.jpg to the reconstruction",
+                "2023-09-13 04:42:08,063 INFO: -------------------------------------------------------",
+                "2023-09-13 04:42:08,100 INFO: DJI_0666_348_4336.jpg resection inliers: 2404 / 2784",
+                "2023-09-13 04:42:08,117 INFO: Adding DJI_0666_348_4336.jpg to the reconstruction",
+                "2023-09-13 04:42:08,430 INFO: -------------------------------------------------------",
+                "2023-09-13 04:42:57,838 DEBUG: Ceres Solver Report: Iterations: 12, Initial cost: 7.257831e+04, Final cost: 4.864316e+04, Termination: CONVERGENCE",
+                "2023-09-13 04:43:02,755 INFO: Removed outliers: 11461",
+                "2023-09-13 04:43:05,743 INFO: Reconstruction 0: 364 images, 403403 points",
+                "2023-09-13 04:43:05,743 INFO: 1 partial reconstructions in total."
+            ]
+        },
+        {
+            "command": "\"/code/SuperBuild/install/bin/opensfm/bin/opensfm\" compute_statistics --diagram_max_points 100000 \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm\"",
+            "exitCode": 0,
+            "output": [
+                "2023-09-13 04:44:08,576 DEBUG: locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0xffff3b86c490>",
+                "2023-09-13 04:44:08,577 DEBUG: Using auto colorbar locator <matplotlib.colorbar._ColorbarAutoLocator object at 0xffff3b86c490> on colorbar",
+                "2023-09-13 04:44:08,577 DEBUG: Setting pcolormesh",
+                "2023-09-13 04:44:09,212 DEBUG: locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0xffff3b80d8b0>",
+                "2023-09-13 04:44:09,212 DEBUG: Using auto colorbar locator <matplotlib.colorbar._ColorbarAutoLocator object at 0xffff3b80d8b0> on colorbar",
+                "2023-09-13 04:44:09,213 DEBUG: Setting pcolormesh",
+                "2023-09-13 04:44:23,391 DEBUG: locator: <matplotlib.colorbar._ColorbarAutoLocator object at 0xffff690bdc10>",
+                "2023-09-13 04:44:23,391 DEBUG: Using auto colorbar locator <matplotlib.colorbar._ColorbarAutoLocator object at 0xffff690bdc10> on colorbar",
+                "2023-09-13 04:44:23,391 DEBUG: Setting pcolormesh"
+            ]
+        },
+        {
+            "command": "\"/code/SuperBuild/install/bin/opensfm/bin/opensfm\" export_visualsfm --points \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm\"",
+            "exitCode": 0
+        },
+        {
+            "command": "\"/code/SuperBuild/install/bin/opensfm/bin/opensfm\" export_openmvs \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm\"",
+            "exitCode": 0
+        },
+        {
+            "command": "\"/code/SuperBuild/install/bin/OpenMVS/DensifyPointCloud\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/undistorted/openmvs/scene.mvs\"  --resolution-level 3 --dense-config-file \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/undistorted/openmvs/Densify.ini\" --max-resolution 3840 --max-threads 5 --number-views-fuse 2 --sub-resolution-levels 2 --archive-type 3 -w \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/undistorted/openmvs/depthmaps\" -v 0 --cuda-device -2",
+            "exitCode": 0,
+            "output": [
+                "Fused depth-maps 346 (95.05%, 33s, ETA 1s)...",
+                "Fused depth-maps 347 (95.33%, 33s, ETA 1s)...",
+                "Fused depth-maps 351 (96.43%, 33s, ETA 1s)...",
+                "Fused depth-maps 353 (96.98%, 33s, ETA 1s)...",
+                "Fused depth-maps 355 (97.53%, 33s, ETA 859ms)...",
+                "Fused depth-maps 358 (98.35%, 34s, ETA 570ms)...",
+                "Fused depth-maps 361 (99.18%, 34s, ETA 283ms)...",
+                "Fused depth-maps 364 (100%, 34s210ms)",
+                "05:36:33 [App     ] Point-cloud trimmed to ROI: 178432 points removed (330ms)",
+                "05:36:34 [App     ] Densifying point-cloud completed: 26450289 points (49m18s365ms)"
+            ]
+        },
+        {
+            "command": "\"/code/SuperBuild/install/bin/OpenMVS/DensifyPointCloud\" --filter-point-cloud -20 -i \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/undistorted/openmvs/scene_dense.mvs\" -v 0 --cuda-device -2",
+            "exitCode": 0,
+            "output": [
+                "Point visibility checks 26433599 (99.94%, 5m19s, ETA 201ms)...",
+                "Point visibility checks 26435634 (99.94%, 5m19s, ETA 177ms)...",
+                "Point visibility checks 26437793 (99.95%, 5m20s, ETA 151ms)...",
+                "Point visibility checks 26439642 (99.96%, 5m20s, ETA 128ms)...",
+                "Point visibility checks 26441723 (99.97%, 5m20s, ETA 103ms)...",
+                "Point visibility checks 26443574 (99.97%, 5m20s, ETA 81ms)...",
+                "Point visibility checks 26445927 (99.98%, 5m20s, ETA 52ms)...",
+                "Point visibility checks 26447758 (99.99%, 5m20s, ETA 30ms)...",
+                "Point visibility checks 26449602 (100.00%, 5m20s, ETA 8ms)...",
+                "Point visibility checks 26450289 (100%, 5m20s651ms)"
+            ]
+        },
+        {
+            "command": "\"/code/SuperBuild/install/bin/FPCFilter\" --input \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/undistorted/openmvs/scene_dense_dense_filtered.ply\" --output \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_filterpoints/point_cloud.ply\" --concurrency 5 --meank 16 --std 2.5 --stats \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_filterpoints/point_cloud_stats.json\"",
+            "exitCode": 0,
+            "output": [
+                "-> Spacing estimation completed (0.01 meters)",
+                "",
+                "?> Done in 33.6s",
+                "",
+                "-> Writing output",
+                "",
+                "?> Done in 2.344s",
+                "",
+                "?> Pipeline done in 35.95s",
+                ""
+            ]
+        },
+        {
+            "command": "\"/code/SuperBuild/install/bin/PoissonRecon\" --in \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_filterpoints/point_cloud.ply\" --out \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/odm_mesh.dirty.ply\" --depth 11 --pointWeight 4.0 --samplesPerNode 1.0 --threads 4 --bType 2 --linearFit ",
+            "exitCode": 0
+        },
+        {
+            "command": "\"/code/SuperBuild/install/bin/OpenMVS/ReconstructMesh\" -i \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/odm_mesh.dirty.ply\" -o \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/odm_mesh.ply\" --archive-type 3 --remove-spikes 0 --remove-spurious 20 --smooth 0 --target-face-num 400000 -v 0",
+            "exitCode": 0,
+            "output": [
+                "Decimated faces 1650270 (93.09%, 14s, ETA 1s)...",
+                "Decimated faces 1666868 (94.02%, 14s, ETA 907ms)...",
+                "Decimated faces 1683112 (94.94%, 14s, ETA 766ms)...",
+                "Decimated faces 1698886 (95.83%, 14s, ETA 629ms)...",
+                "Decimated faces 1714268 (96.70%, 14s, ETA 497ms)...",
+                "Decimated faces 1729182 (97.54%, 14s, ETA 370ms)...",
+                "Decimated faces 1743524 (98.35%, 14s, ETA 248ms)...",
+                "Decimated faces 1757520 (99.14%, 14s, ETA 129ms)...",
+                "Decimated faces 1770860 (99.89%, 14s, ETA 16ms)...",
+                "Decimated faces 1772820 (100%, 14s989ms)"
+            ]
+        },
+        {
+            "command": "pdal info \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_filterpoints/point_cloud.ply\" > \"/tmp/tmpk8qvoi9w.json\"",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmp10vldhlz.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpvpctwgkl.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmp32wr5mab.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmp_brvdlr_.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmp92tcse0_.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpozxkxciq.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpdbyrecjn.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpnhdncv1k.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpq26_qjah.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpfqp0n5aa.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpekfhc0fr.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpbc2hva4c.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmp9d52edzd.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpx5q57lse.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpu21x0jzj.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmp90wil197.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpsutlxnzp.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpuiq1uvpj.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmp8qlk6fsg.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpiw3f_oro.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpp3ridhwq.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmp74zku7he.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmplonnhok1.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpxrvt40jg.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpb7i6xnwn.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpjywjabzq.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpol52uk2u.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpapf8qg9q.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpwpnonb8g.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpxnf1j_3a.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpmk_nu93j.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpxc7s89vy.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmp992srebz.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpdp2j60r_.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmp9ce1ett4.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpan__pjlf.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpcgueyh60.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmp0e8xn38s.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpngu74crr.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpgps0sh2r.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpcz8_uyhx.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpuxog1lcb.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpp62xjx_4.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpo3mtgsrl.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmppw7wo5s9.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmppu0ciitu.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpp_9h04s9.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmp4d1u8vdb.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpf92gtg4b.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpa4ei5949.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmp40tlhh7s.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpteirb2tn.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpyz5hq3rl.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpmr07dklj.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpx3d3wit_.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpdlw6qvxa.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpyfbgc6ur.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpvfowjlpk.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmprgip1ldf.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmprx_jqc6y.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmp51t282w2.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpu0zuq3gp.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpzqazx42s.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpd_p3zi_i.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpisyli905.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmp_lxoanl8.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmp3bye3qne.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmp3neoubmj.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpz3tp_mr1.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpd3tr1n4p.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmppjvisz7t.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmppelyxxfw.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmp3uo27ub8.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmplq6vrpsl.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpm17o2846.json",
+            "exitCode": 0
+        },
+        {
+            "command": "gdalbuildvrt -input_file_list \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/tiles_list.txt\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/tiles.vrt\" ",
+            "exitCode": 0,
+            "output": [
+                "0...10...20...30...40...50...60...70...80...90...100 - done."
+            ]
+        },
+        {
+            "command": "gdal_translate -co NUM_THREADS=5 -co BIGTIFF=IF_SAFER --config GDAL_CACHEMAX 42.25% \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/tiles.vrt\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/tiles.tmp.tif\"",
+            "exitCode": 0,
+            "output": [
+                "Input file size is 18282, 16092",
+                "0...10...20...30...40...50...60...70...80...90...100 - done."
+            ]
+        },
+        {
+            "command": "gdal_translate -co NUM_THREADS=5 -co BIGTIFF=IF_SAFER --config GDAL_CACHEMAX 42.25% -outsize 10% 0 \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/tiles.tmp.tif\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/tiles.small.tif\"",
+            "exitCode": 0,
+            "output": [
+                "Input file size is 18282, 16092",
+                "0...10...20...30...40...50...60...70...80...90...100 - done."
+            ]
+        },
+        {
+            "command": "gdalbuildvrt -resolution highest -r bilinear \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/merged.vrt\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/tiles.small_filled.tif\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/tiles.tmp.tif\"",
+            "exitCode": 0,
+            "output": [
+                "0...10...20...30...40...50...60...70...80...90...100 - done."
+            ]
+        },
+        {
+            "command": "gdal_translate -co NUM_THREADS=5 -co TILED=YES -co BIGTIFF=IF_SAFER -co COMPRESS=DEFLATE --config GDAL_CACHEMAX 42.25% \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/merged.vrt\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/tiles.tif\"",
+            "exitCode": 0,
+            "output": [
+                "Input file size is 18282, 16092",
+                "0...10...20...30...40...50...60...70...80...90...100 - done."
+            ]
+        },
+        {
+            "command": "\"/code/SuperBuild/install/bin/dem2mesh\" -inputFile \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/tmp/mesh_dsm.tif\" -outputFile \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/odm_25dmesh.dirty.ply\" -maxTileLength 2000 -maxVertexCount 200000 -maxConcurrency 5 -edgeSwapThreshold 0.15 -verbose ",
+            "exitCode": 0,
+            "output": [
+                "iteration 35 - triangles 773373 threshold 0.0792352",
+                "iteration 40 - triangles 707710 threshold 0.147008",
+                "iteration 45 - triangles 645821 threshold 0.254804",
+                "iteration 50 - triangles 590375 threshold 0.418195",
+                "iteration 55 - triangles 540149 threshold 0.656357",
+                "iteration 60 - triangles 496205 threshold 0.992437",
+                "iteration 65 - triangles 457437 threshold 1.45393",
+                "iteration 70 - triangles 423516 threshold 2.07307",
+                "Performing edge collapses...",
+                "Writing to file...  done!"
+            ]
+        },
+        {
+            "command": "\"/code/SuperBuild/install/bin/OpenMVS/ReconstructMesh\" -i \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/odm_25dmesh.dirty.ply\" -o \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/odm_25dmesh.ply\" --archive-type 3 --remove-spikes 0 --remove-spurious 0 --smooth 0 --target-face-num 400000 -v 0",
+            "exitCode": 0,
+            "output": [
+                "05:50:45 [App     ] OpenMVS x32 v2.2.0",
+                "05:50:45 [App     ] Build date: Sep  9 2023, 12:06:29",
+                "05:50:45 [App     ] CPU:  (5 cores)",
+                "05:50:45 [App     ] RAM: 31.31GB Physical Memory 2.00GB Virtual Memory",
+                "05:50:45 [App     ] OS: Linux 5.10.104-linuxkit (aarch64)",
+                "05:50:45 [App     ] Disk:",
+                "05:50:45 [App     ] warning: no SSE compatible CPU or OS detected",
+                "05:50:45 [App     ] Command line: ReconstructMesh -i /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/odm_25dmesh.dirty.ply -o /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/odm_25dmesh.ply --archive-type 3 --remove-spikes 0 --remove-spurious 0 --smooth 0 --target-face-num 400000 -v 0"
+            ]
+        },
+        {
+            "command": "\"/code/SuperBuild/install/bin/texrecon\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/undistorted/reconstruction.nvm\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/odm_mesh.ply\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_texturing/odm_textured_model_geo\" -d gmi -o gauss_clamping -t none --no_intermediate_results      --max_texture_size=8192 ",
+            "exitCode": 0,
+            "output": [
+                "",
+                "Blending texture patches 100%... done. (Took 10.395s)",
+                "Generating texture atlases:",
+                "Sorting texture patches... done.",
+                "",
+                "Working on atlas 41 100%... done.",
+                "Finalizing texture atlases... done. (Took: 0s)",
+                "Building objmodel:",
+                "Saving model... done.",
+                "Whole texturing procedure took: 82.295s"
+            ]
+        },
+        {
+            "command": "draco_transcoder -i \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_texturing/odm_textured_model_geo.glb\" -o \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_texturing/odm_textured_model_geo_compressed.glb\" -qt 16 -qp 16",
+            "exitCode": 0,
+            "output": [
+                "Transcode\t/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_texturing/odm_textured_model_geo.glb\t1294"
+            ]
+        },
+        {
+            "command": "\"/code/SuperBuild/install/bin/texrecon\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/undistorted/reconstruction.nvm\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_meshing/odm_25dmesh.ply\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_texturing_25d/odm_textured_model_geo\" -d gmi -o gauss_clamping -t none --no_intermediate_results    --nadir_mode  --max_texture_size=8192 ",
+            "exitCode": 0,
+            "output": [
+                "",
+                "Blending texture patches 100%... done. (Took 27.42s)",
+                "Generating texture atlases:",
+                "Sorting texture patches... done.",
+                "",
+                "Working on atlas 70 100%... done.",
+                "Finalizing texture atlases... done. (Took: 0s)",
+                "Building objmodel:",
+                "Saving model... done.",
+                "Whole texturing procedure took: 121.186s"
+            ]
+        },
+        {
+            "command": "pdal translate -i \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_filterpoints/point_cloud.ply\" -o \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_georeferencing/odm_georeferenced_model.laz\" ferry --filters.ferry.dimensions=\"views => UserData\"",
+            "exitCode": 0
+        },
+        {
+            "command": "entwine build --threads 5 --tmp \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/entwine_pointcloud-tmp\" -i /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_georeferencing/odm_georeferenced_model.laz -o \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/entwine_pointcloud\" ",
+            "exitCode": 0,
+            "output": [
+                "SRS: none",
+                "",
+                "Adding 0 - /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_georeferencing/odm_georeferenced_model.laz",
+                "Joining",
+                "00:10 - 46% - 10,072,064 - 3,625 (3,625) M/h - 0W - 0R - 238A",
+                "00:20 - 76% - 16,740,352 - 3,013 (2,400) M/h - 0W - 0R - 398A",
+                "00:30 - 100% - 22,120,869 - 2,654 (1,936) M/h - 149W - 0R - 404A",
+                "Done 0",
+                "Saving",
+                "Wrote 22,120,869 points."
+            ]
+        },
+        {
+            "command": "pdal info --summary \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_georeferencing/odm_georeferenced_model.laz\" > \"/tmp/tmpw8o5vkl0.json\"",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpldp1wqwl.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpiz7xv907.json",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal pipeline -i /tmp/tmpzzz6g94x.json",
+            "exitCode": 0
+        },
+        {
+            "command": "gdalbuildvrt -input_file_list \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/tiles_list.txt\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/tiles.vrt\" ",
+            "exitCode": 0,
+            "output": [
+                "0...10...20...30...40...50...60...70...80...90...100 - done."
+            ]
+        },
+        {
+            "command": "gdal_translate -co NUM_THREADS=5 -co BIGTIFF=IF_SAFER --config GDAL_CACHEMAX 40.15% \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/tiles.vrt\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/tiles.tmp.tif\"",
+            "exitCode": 0,
+            "output": [
+                "Input file size is 3657, 3219",
+                "0...10...20...30...40...50...60...70...80...90...100 - done."
+            ]
+        },
+        {
+            "command": "gdal_translate -co NUM_THREADS=5 -co BIGTIFF=IF_SAFER --config GDAL_CACHEMAX 40.15% -outsize 10% 0 \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/tiles.tmp.tif\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/tiles.small.tif\"",
+            "exitCode": 0,
+            "output": [
+                "Input file size is 3657, 3219",
+                "0...10...20...30...40...50...60...70...80...90...100 - done."
+            ]
+        },
+        {
+            "command": "gdalbuildvrt -resolution highest -r bilinear \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/merged.vrt\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/tiles.small_filled.tif\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/tiles.tmp.tif\"",
+            "exitCode": 0,
+            "output": [
+                "0...10...20...30...40...50...60...70...80...90...100 - done."
+            ]
+        },
+        {
+            "command": "gdal_translate -co NUM_THREADS=5 -co TILED=YES -co BIGTIFF=IF_SAFER -co COMPRESS=DEFLATE --config GDAL_CACHEMAX 40.15% \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/merged.vrt\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/tiles.tif\"",
+            "exitCode": 0,
+            "output": [
+                "Input file size is 3657, 3219",
+                "0...10...20...30...40...50...60...70...80...90...100 - done."
+            ]
+        },
+        {
+            "command": "gdal_translate -of COG -co NUM_THREADS=5 -co BLOCKSIZE=256 -co COMPRESS=DEFLATE -co PREDICTOR=2 -co BIGTIFF=IF_SAFER -co RESAMPLING=NEAREST --config GDAL_CACHEMAX 40.7% --config GDAL_NUM_THREADS 5 \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.tif\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm_cogeo.tif\" ",
+            "exitCode": 0,
+            "output": [
+                "Input file size is 3657, 3219",
+                "0...10...20...30...40...50...60...70...80...90...100 - done."
+            ]
+        },
+        {
+            "command": "\"/code/SuperBuild/install/bin/odm_orthophoto\" -inputFiles /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_texturing_25d/odm_textured_model_geo.obj -logFile \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_orthophoto/odm_orthophoto_log.txt\" -outputFile \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_orthophoto/odm_orthophoto_render.tif\" -resolution 20.0 -verbose -outputCornerFile \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_orthophoto/odm_orthophoto_corners.txt\"       --config GDAL_CACHEMAX 13678278656.0 ",
+            "exitCode": 0,
+            "output": [
+                "Rendering material0067 ... done",
+                "Rendering material0068 ... done",
+                "Rendering material0069 ... done",
+                "... model rendered",
+                "",
+                "",
+                "Writing ortho photo to /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_orthophoto/odm_orthophoto_render.tif",
+                "Set GDAL_CACHEMAX to 13678278656",
+                "Writing corner coordinates to /var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_orthophoto/odm_orthophoto_corners.txt",
+                "Orthophoto generation done."
+            ]
+        },
+        {
+            "command": "pdal info --dimensions \"X,Y,Z\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_georeferencing/odm_georeferenced_model.laz\" > \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_georeferencing/odm_georeferenced_model.info.json\"",
+            "exitCode": 0
+        },
+        {
+            "command": "pdal translate -i \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_georeferencing/odm_georeferenced_model.laz\" -o \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/stats/overlap.tif\" --writer gdal --writers.gdal.resolution=0.13057857142857143 --writers.gdal.data_type=uint8_t --writers.gdal.dimension=UserData --writers.gdal.output_type=max --writers.gdal.radius=0.18466598666958967 ",
+            "exitCode": 0
+        },
+        {
+            "command": "gdaldem color-relief \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/stats/overlap.tif\" \"/code/opendm/report/overlap_color_map.txt\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/stats/overlap.png\" -of PNG -alpha",
+            "exitCode": 0,
+            "output": [
+                "0...10...20...30...40...50...60...70...80...90...100 - done."
+            ]
+        },
+        {
+            "command": "gdal_translate -of png \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_orthophoto/odm_orthophoto.tif\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/stats/ortho.png\" -outsize 1400 0  --config GDAL_CACHEMAX 40.7% ",
+            "exitCode": 0,
+            "output": [
+                "Input file size is 3655, 3216",
+                "0...10...20...30...40...50...60...70...80...90...100 - done."
+            ]
+        },
+        {
+            "command": "gdal_translate -outsize 1400 0 \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.tif\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.preview.tif\" --config GDAL_CACHEMAX 40.7%",
+            "exitCode": 0,
+            "output": [
+                "Input file size is 3657, 3219",
+                "0...10...20...30...40...50...60...70...80...90...100 - done."
+            ]
+        },
+        {
+            "command": "gdaldem color-relief \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.preview.tif\" \"/code/opendm/tiles/color_relief.txt\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.previewcolor.tif\" -alpha -co ALPHA=YES",
+            "exitCode": 0,
+            "output": [
+                "0...10...20...30...40...50...60...70...80...90...100 - done."
+            ]
+        },
+        {
+            "command": "gdaldem hillshade \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.preview.tif\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.previewhillshade.tif\" -z 1.0 -s 1.0 -az 315.0 -alt 45.0",
+            "exitCode": 0,
+            "output": [
+                "0...10...20...30...40...50...60...70...80...90...100 - done."
+            ]
+        },
+        {
+            "command": "/usr/bin/python3 \"/code/opendm/tiles/hsv_merge.py\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.previewcolor.tif\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.previewhillshade.tif\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.previewcolored_hillshade.tif\"",
+            "exitCode": 0,
+            "output": [
+                "0...10...20...30...40...50...60...70...80...90...100 - done."
+            ]
+        },
+        {
+            "command": "gdal_translate -outsize 1400 0 -of png \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/odm_dem/dsm.previewcolored_hillshade.tif\" \"/var/www/data/b6978b1c-8688-4e18-88f5-897f48ad0fe9/opensfm/stats/dsm.png\" --config GDAL_CACHEMAX 40.7%",
+            "exitCode": 0,
+            "output": [
+                "Input file size is 1400, 1232",
+                "0...10...20...30...40...50...60...70...80...90...100 - done."
+            ]
+        }
+    ],
+    "success": true,
+    "endTime": "2023-09-13T05:55:56.534433",
+    "totalTime": 20334.26
+}
